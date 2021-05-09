@@ -2,3 +2,6 @@
 html {
   scroll-behavior: smooth;
 }
+.background-pentagon, #heading-breadcrumbs {
+    background: url("../img/texture-blue.png") center center repeat !important;
+}
