@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
     <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
     <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.lmw.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="css/style.lmw.css?2" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.css?2">
     <!-- Favicon and apple touch icons-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
@@ -81,8 +81,32 @@
                 <li class="nav-item">
                   <a href="/" class="nav-link">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a href="bastones.html" class="nav-link">Los Bastones</a>
+                <li class="nav-item dropdown">
+                  <a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">Productos <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item dropdown-submenu">
+                      <a id="navbarDropdownMenuLinkBastones" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Bastones</a>
+                      <ul aria-labelledby="navbarDropdownMenuLinkBastones" class="dropdown-menu">
+                        <li class="dropdown-item"><a href="baston-nature.html" class="nav-link">Nature</a></li>
+                        <li class="dropdown-item"><a href="baston-roti.html" class="nav-link">Rôti</a></li>
+                        <li class="dropdown-item"><a href="baston-black-mamba.html" class="nav-link">Black Mamba</a></li>
+                        <li class="dropdown-item"><a href="baston-custom.html" class="nav-link">Custom</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu">
+                      <a href="piezas.html" class="nav-link">Piezas</a>
+                      <!--<a id="navbarDropdownMenuLinkPiezas" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Piezas</a>
+                      <ul aria-labelledby="navbarDropdownMenuLinkPiezas" class="dropdown-menu">
+                        <li class="dropdown-item"><a href="piezas-baskets.html" class="nav-link">Cestas/Baskets</a></li>
+                        <li class="dropdown-item"><a href="piezas-grips.html" class="nav-link">Empuñaduras/Grips</a></li>
+                        <li class="dropdown-item"><a href="piezas-puntas.html" class="nav-link">Puntas</a></li>
+                        <li class="dropdown-item"><a href="piezas-dragoneras.html" class="nav-link">Cintas/Dragoneras</a></li>
+                      </ul>-->
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item active">
+                  <a href="nosotros.html" class="nav-link">La Montagne</a>
                 </li>
                 <li class="nav-item">
                   <a href="faq.html" class="nav-link">Preguntas Frecuentes</a>
@@ -220,7 +244,7 @@
     <script src="js/jquery.parallax-1.1.3.js"></script>
     <script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
     <script src="vendor/jquery.scrollto/jquery.scrollTo.min.js"></script>
-    <script src="js/front.js"></script>
+    <script src="js/front.js?2"></script>
     <script type="text/javascript">
       var btns = $("#navigation .navbar-nav .nav-item");
       for (var i = 0; i < btns.length; i++) {

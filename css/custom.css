@@ -11,3 +11,8 @@ html {
   height: 32px;
   line-height: 32px;
 }
+.price span {
+  font-size: 0.9rem;
+  color: #999;
+  margin-right: 5px;
+}

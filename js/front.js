@@ -1,7 +1,5 @@
 $(function () {
 
-
-
   // ------------------------------------------------------- //
   // Navbar Sticky
   // ------------------------------------------------------ //
@@ -23,17 +21,13 @@ $(function () {
   $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function (event) {
     event.preventDefault();
     event.stopPropagation();
-
     $(this).siblings().toggleClass("show");
-
-
     if (!$(this).next().hasClass('show')) {
       $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
     }
     $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
       $('.dropdown-submenu .show').removeClass("show");
     });
-
   });
 
   // ------------------------------------------------------- //
@@ -241,55 +235,11 @@ $(function () {
 
 
   // ------------------------------------------------------ //
-  // For demo purposes, can be deleted
+  // Custom
   // ------------------------------------------------------ //
 
-  var stylesheet = $('link#theme-stylesheet');
-  $("<link id='new-stylesheet' rel='stylesheet'>").insertAfter(stylesheet);
-  var alternateColour = $('link#new-stylesheet');
-
-  if ($.cookie("theme_csspath")) {
-    alternateColour.attr("href", $.cookie("theme_csspath"));
-  }
-
-  $("#colour").change(function () {
-
-    if ($(this).val() !== '') {
-
-      var theme_csspath = 'css/style.' + $(this).val() + '.css';
-
-      alternateColour.attr("href", theme_csspath);
-
-      $.cookie("theme_csspath", theme_csspath, {
-        expires: 365,
-        path: document.URL.substr(0, document.URL.lastIndexOf('/'))
-      });
-
-    }
-
-    return false;
-  });
-
-  if ($.cookie("theme_layout")) {
-    $('body').addClass($.cookie("theme_layout"));
-  }
-
-  $("#layout").change(function () {
-
-    if ($(this).val() !== '') {
-
-      var theme_layout = $(this).val();
-
-      $('body').removeClass('wide');
-      $('body').removeClass('boxed');
-
-      $('body').addClass(theme_layout);
-
-      $.cookie("theme_layout", theme_layout, {
-        expires: 365,
-        path: document.URL.substr(0, document.URL.lastIndexOf('/'))
-      });
-    }
+  $('#submitBuy').on('click', function(){
+    window.location.href='pedidos.html'
   });
 
 });
