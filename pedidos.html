@@ -260,30 +260,5 @@
     <script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
     <script src="vendor/jquery.scrollto/jquery.scrollTo.min.js"></script>
     <script src="js/front.js?2"></script>
-    <script type="text/javascript">
-      var btns = $("#navigation .navbar-nav .nav-item");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click",
-          function () {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-          });
-      }
-      $(window).scroll(function () {
-        var distance = $(window).scrollTop();
-        $('.page-section').each(function (i) {
-          if ($(this).position().top <= distance + 200) {
-            $('.navbar-nav li.active').removeClass('active');
-            $('.navbar-nav li').eq(i).addClass('active');
-          }
-        });
-      }).scroll();
-      var customScroll = function(id){
-        var reqId = "#"+id;
-        window.scrollTo(0, $(reqId).offset().top-70);
-        $('.collapse').collapse('hide');
-      }
-    </script>
   </body>
 </html>
