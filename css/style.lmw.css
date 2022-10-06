@@ -19,7 +19,7 @@ https://bootstrapious.com/p/universal-business-e-commerce-template
 *
 */
 .boxed {
-  background: url("../img/boxed-pattern.png");
+  background: url("/img/boxed-pattern.png");
 }
 
 .boxed #all {
@@ -234,7 +234,7 @@ p.lead {
 }
 
 .background-pentagon, #heading-breadcrumbs {
-  background: url("../img/texture-bw.png") center center repeat;
+  background: url("/img/texture-bw.png") center center repeat;
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
 }
