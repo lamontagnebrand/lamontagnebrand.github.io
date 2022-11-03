@@ -1,2 +1,3 @@
 # Redirect /bastones-detalles.html /bastones.html
-Redirect /merch.html /productos/merch/
+Redirect /merch.html /productos/ropa/
+Redirect /productos/merch/ /productos/ropa/
