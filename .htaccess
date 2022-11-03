@@ -1,3 +1,5 @@
-# Redirect /bastones-detalles.html /bastones.html
+# Redirect /bastones-detalles.html /productos/bastones/
+Redirect /bastones.html /productos/bastones/
+Redirect /piezas.html /productos/bastones/piezas/
 Redirect /merch.html /productos/ropa/
 Redirect /productos/merch/ /productos/ropa/
