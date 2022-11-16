@@ -1,5 +1,7 @@
 # Redirect /bastones-detalles.html /productos/bastones/
 Redirect /bastones.html /productos/bastones/
+Redirect /baston-nature.html /productos/bastones/esqui/baston-nature.html
+Redirect /baston-roti.html /productos/bastones/esqui/baston-roti.html
 Redirect /baston-black-mamba.html /productos/bastones/esqui/baston-black-mamba.html
 Redirect /baston-custom.html /productos/bastones/esqui/baston-custom.html
 Redirect /piezas.html /productos/bastones/piezas/
