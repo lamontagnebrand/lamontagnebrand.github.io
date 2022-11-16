@@ -65,7 +65,7 @@
       <!-- Top bar end-->
 
       <!-- Navbar Start-->
-      <header class="nav-holder make-sticky">
+      <!--<header class="nav-holder make-sticky">
         <div id="navbar" role="navigation" class="navbar navbar-expand-lg">
           <div class="container">
             <a href="/" class="navbar-brand home">
@@ -94,6 +94,56 @@
             </div>
           </div>
         </div>
+      </header>-->
+      <!-- Navbar End-->
+
+      <!-- Navbar Start-->
+      <header class="nav-holder make-sticky">
+        <div id="navbar" role="navigation" class="navbar navbar-expand-lg">
+          <div class="container">
+            <a href="/" class="navbar-brand home">
+              <img src="/img/lm-logo-w.png" alt="La Montagne logo" class="d-none d-md-inline-block">
+              <img src="/img/lm-logo-w-small.png" alt="La Montagne logo" class="d-inline-block d-md-none">
+              <span class="sr-only">La Montagne - go to homepage</span>
+            </a>
+            <button type="button" data-toggle="collapse" data-target="#navigation" class="navbar-toggler btn-template-outlined">
+              <span class="sr-only">Toggle navigation</span><i class="fa fa-align-justify"></i>
+            </button>
+            <div id="navigation" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="javascript: void(0)" data-toggle="dropdown" class="dropdown-toggle">Productos <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item dropdown-submenu">
+                      <a id="navbarDropdownMenuLinkBastones" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Bastones</a>
+                      <ul aria-labelledby="navbarDropdownMenuLinkBastones" class="dropdown-menu">
+                        <li class="dropdown-item"><a href="/productos/bastones/esqui/baston-nature.html" class="nav-link">Nature</a></li>
+                        <li class="dropdown-item"><a href="/productos/bastones/esqui/baston-roti.html" class="nav-link">Rôti</a></li>
+                        <li class="dropdown-item"><a href="/productos/bastones/esqui/baston-black-mamba.html" class="nav-link">Black Mamba</a></li>
+                        <li class="dropdown-item"><a href="/productos/bastones/esqui/baston-custom.html" class="nav-link">Custom</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu">
+                      <a href="/productos/ropa/" class="nav-link">Ropa</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="/nosotros.html" class="nav-link">La Montagne</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="/faq.html" class="nav-link">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/contacto.html" class="nav-link">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </header>
       <!-- Navbar End-->
 
@@ -107,7 +157,8 @@
           <div class="icon icon-outlined icon-lg"><i class="fa fa-leaf"></i></div>
           <h3 class="text-uppercase">Bastones de bambú hechos a mano</h3>
           <p class="lead">La Montagne contribuye a cuidar el planeta.</p>
-          <p class="text-center"><a href="javascript:customScroll('bastones')" class="btn btn-template-outlined-white btn-lg">Ver los bastones</a></p>
+          <!--<p class="text-center"><a href="javascript:customScroll('bastones')" class="btn btn-template-outlined-white btn-lg">Ver los bastones</a></p>-->
+          <p class="text-center"><a href="/productos/bastones/" class="btn btn-template-outlined-white btn-lg">Ver los bastones</a></p>
         </div>
       </section>
 
@@ -289,10 +340,10 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <h2 class="text-uppercase">Nature</h2>
-              <p class="lead mb-small">Armonía y plenitud sin alteraciones.</p>
-              <p class="mb-small">Los bastones "Nature" respetan el color original de las cañas de bambú usadas, mostrando su pureza y autenticidad.</p>
-              <p><a href="/productos/bastones/esqui/baston-nature.html" class="btn btn-template-main">Saber más</a></p>
+              <h2 class="text-uppercase">Bastones de Esquí</h2>
+              <p class="lead mb-small">Hechos a mano y a medida.</p>
+              <p class="mb-small">Elige entre nuesros modelos de base o customiza los tuyos para darles un toque más personal.</p>
+              <p><a href="/productos/bastones/esqui/" class="btn btn-template-main">Saber más</a></p>
             </div>
             <div class="col-md-6 text-center"><img src="/img/home-nature-mini.jpg" alt="" class="img-fluid"></div>
           </div>
@@ -307,10 +358,10 @@
               </div>
             </div>
             <div class="col-md-6">
-              <h2 class="text-uppercase">Rôti</h2>
-              <p class="lead mb-small">Caramelizar el exterior del bambú.</p>
-              <p class="mb-small">Aplicando calor a la capa exterior del bambú, sin alterar, conseguimos obtener un color único y muy elegante.</p>
-              <p><a href="/productos/bastones/esqui/baston-roti.html" class="btn btn-template-outlined-white">Saber más</a></p>
+              <h2 class="text-uppercase">Bastones de Trail</h2>
+              <p class="lead mb-small">Ligeros y resistentes.</p>
+              <p class="mb-small">Siente la montaña en tus manos en tus salidas de Trail o Trekking.</p>
+              <p><a href="/productos/bastones/trail/" class="btn btn-template-outlined-white">Saber más</a></p>
             </div>
           </div>
         </div>
@@ -319,12 +370,12 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <h2 class="text-uppercase">Black Mamba</h2>
-              <p class="lead mb-small">Solo ataca si se ve amenazada.</p>
-              <p class="mb-small">El modelo más agresivo, de "piel" color marrón oscuro y "boca" negra, característica que le da su nombre.</p>
-              <p><a href="/productos/bastones/esqui/baston-black-mamba.html" class="btn btn-template-main">Saber más</a></p>
+              <h2 class="text-uppercase">Ropa</h2>
+              <p class="lead mb-small">Llévate La Montagne puesta.</p>
+              <p class="mb-small">Materiales ecológicos para acompañarte en tus aventuras.</p>
+              <p><a href="/productos/ropa/" class="btn btn-template-main">Saber más</a></p>
             </div>
-            <div class="col-md-6 text-center"><img src="/img/home-bm-mini.jpg" alt="" class="img-fluid"></div>
+            <div class="col-md-6 text-center"><img src="/img/home-ropa-mini.jpg" alt="" class="img-fluid"></div>
           </div>
         </div>
       </section>
