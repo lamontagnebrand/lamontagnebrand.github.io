@@ -239,7 +239,7 @@ $(function () {
   // ------------------------------------------------------ //
 
   $('#submitBuy').on('click', function(){
-    window.location.href='pedidos.html'
+    window.location.href='/pedidos.html'
   });
 
 });
