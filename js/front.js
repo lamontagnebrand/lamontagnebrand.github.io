@@ -242,4 +242,13 @@ $(function () {
     window.location.href='/pedidos.html'
   });
 
+  // ------------------------------------------------------- //
+  // Dynamic Copyright Year
+  // ------------------------------------------------------ //
+  var currentYear = new Date().getFullYear();
+  var copyrightYear = $('#copyright-year');
+  if (copyrightYear.length) {
+    copyrightYear.text(currentYear);
+  }
+
 });
